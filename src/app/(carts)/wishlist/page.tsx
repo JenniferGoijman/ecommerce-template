@@ -55,7 +55,7 @@ const ProductsWishlists = async ({ session }: { session: Session }) => {
         <h2 className="mb-5 text-xl font-bold sm:text-2xl">YOUR WISHLISTS</h2>
         <Products
           products={filteredWishlist}
-          extraClassname={"colums-mobile"}
+          extraClassname={"columns-mobile"}
         />
       </div>
     );

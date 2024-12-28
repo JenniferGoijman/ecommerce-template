@@ -39,7 +39,7 @@ const ProductPage = async ({ params }: Props) => (
             YOU MIGHT ALSO LIKE...
           </h2>
           <ProductSkeleton
-            extraClassname={"colums-mobile"}
+            extraClassname={"columns-mobile"}
             numberProducts={6}
           />
         </div>
@@ -64,7 +64,7 @@ const AllProducts = async ({ id }: { id: string }) => {
         YOU MIGHT ALSO LIKE...
       </h2>
 
-      <Products products={randomProducts} extraClassname={"colums-mobile"} />
+      <Products products={randomProducts} extraClassname={"columns-mobile"} />
     </>
   );
 };

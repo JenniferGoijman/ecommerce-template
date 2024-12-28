@@ -13,7 +13,7 @@ const ProductSkeleton = ({
     (_, index) => (
       <div
         key={index}
-        className={`flex justify-between border border-solid border-border-primary rounded-md overflow-hidden 
+        className={`flex justify-between border border-solid border-border-primary rounded-md overflow-hidden
             ${extraClassname === "cart-ord-mobile" ? "flex-row sm:flex-col" : "flex-col"}`}
       >
         <Skeleton className="w-full aspect-[2/3] rounded-b-none" />
@@ -27,7 +27,7 @@ const ProductSkeleton = ({
 
   return (
     <div
-      className={`grid gap-x-3.5 gap-y-6 sm:gap-y-9 ${extraClassname === "colums-mobile" ? "grid-cols-auto-fill-110" : ""}
+      className={`grid gap-x-3.5 gap-y-6 sm:gap-y-9 ${extraClassname === "columns-mobile" ? "grid-cols-auto-fill-110" : ""}
         ${extraClassname === "cart-ord-mobile" ? "grid-cols-1" : ""} sm:grid-cols-auto-fill-250`}
     >
       {productSkeletons}
