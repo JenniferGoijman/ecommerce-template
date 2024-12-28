@@ -43,12 +43,12 @@ const Signin = () => {
   return (
     <section className="flex items-center justify-center w-full pt-12 xs:h-80vh">
       <form
-        className="p-6 xs:p-10	w-full max-w-350 flex flex-col justify-between items-center gap-2.5	
-                border border-solid border-[#2E2E2E] bg-[#0A0A0A] rounded-md"
+        className="p-6 xs:p-10	w-full max-w-350 flex flex-col justify-between items-center gap-2.5
+                border border-solid border-dark-200 background-secondary rounded-md"
         onSubmit={handleSubmit}
       >
         {error && (
-          <div className="text-[#FF6166] flex items-center justify-center gap-2">
+          <div className="text-red-100 flex items-center justify-center gap-2">
             <svg
               data-testid="geist-icon"
               height="16"
@@ -73,7 +73,7 @@ const Signin = () => {
         <input
           type="email"
           placeholder="Email"
-          className="w-full text-[#A1A1A1] h-8 border border-solid border-[#2E2E2E] py-1 px-2.5 rounded bg-black text-13"
+          className="w-full text-gray-100 h-8 border border-solid border-dark-200 py-1 px-2.5 rounded bg-black text-13"
           name="email"
         />
 
@@ -82,11 +82,11 @@ const Signin = () => {
           <input
             type={showPassword ? "text" : "password"}
             placeholder="Password"
-            className="w-full text-[#A1A1A1] h-8 border border-solid border-[#2E2E2E] py-1 px-2.5 rounded-l bg-black text-13"
+            className="w-full text-gray-100 h-8 border border-solid border-dark-200 py-1 px-2.5 rounded-l bg-black text-13"
             name="password"
           />
           <button
-            className="flex text-[#A1A1A1] items-center justify-center w-2/12 transition duration-150 bg-black border-r border-solid rounded-r border-y border-[#2E2E2E] ease hover:bg-[#1F1F1F]"
+            className="flex text-gray-100 items-center justify-center w-2/12 transition duration-150 bg-black border-r border-solid rounded-r border-y border-dark-200 ease hover:bg-dark-300"
             onClick={(e) => {
               e.preventDefault();
               setShowPassword(!showPassword);
@@ -129,21 +129,21 @@ const Signin = () => {
           </button>
         </div>
         <button
-          className="w-full bg-black border border-solid border-[#2E2E2E] py-1.5 mt-2.5 rounded transition-all hover:bg-[#1F1F1F] hover:border-[#454545] text-13"
+          className="w-full bg-black border border-solid border-dark-200 py-1.5 mt-2.5 rounded transition-all hover:bg-dark-300 hover:border-dark-100 text-13"
           type="submit"
         >
           Signup
         </button>
 
         <div className="relative flex items-center justify-center w-full h-10">
-          <div className="absolute w-full h-px top-2/4 bg-[#2E2E2E]"></div>
-          <p className="z-10 flex items-center justify-center w-8 h-6 bg-[#0A0A0A]">
+          <div className="absolute w-full h-px top-2/4 bg-dark-200"></div>
+          <p className="z-10 flex items-center justify-center w-8 h-6 background-secondary">
             or
           </p>
         </div>
 
         <button
-          className="flex text-[#A1A1A1] items-center gap-3 px-4 py-2 text-sm align-middle transition-all bg-black border border-solid rounded border-[#2E2E2E] ease hover:bg-[#1F1F1F] hover:border-[#454545]"
+          className="flex text-gray-100 items-center gap-3 px-4 py-2 text-sm align-middle transition-all bg-black border border-solid rounded border-dark-200 ease hover:bg-dark-300 hover:border-dark-100"
           onClick={(e) => {
             e.preventDefault();
             signIn("google");
@@ -179,7 +179,7 @@ const Signin = () => {
         </button>
         <Link
           href="/register"
-          className="text-sm transition duration-150 text-[#A1A1A1] ease hover:text-white"
+          className="text-sm transition duration-150 text-gray-100 ease hover:text-white"
         >
           Don&apos;t have an account?
         </Link>

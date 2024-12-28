@@ -35,7 +35,7 @@ const UserOrders = async () => {
       <h2 className="mb-6 text-4xl font-bold">NO ORDERS YET</h2>
       <p className="mb-4 text-lg">To view your orders you must be logged in.</p>
       <Link
-        className="flex font-medium	 items-center bg-[#0C0C0C] justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-[#2E2E2E] transition-all hover:bg-[#1F1F1F] hover:border-[#454545]"
+        className="flex font-medium	 items-center bg-dark-400 justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-dark-200 transition-all hover:bg-dark-300 hover:border-dark-100"
         href="/login"
       >
         Login
@@ -55,7 +55,7 @@ const Orders = async () => {
           To create an order add a product to the cart and buy it!
         </p>
         <Link
-          className="flex font-medium	 items-center bg-[#0C0C0C] justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-[#2E2E2E] transition-all hover:bg-[#1F1F1F] hover:border-[#454545]"
+          className="flex font-medium	 items-center bg-dark-400 justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-dark-200 transition-all hover:bg-dark-300 hover:border-dark-100"
           href="/"
         >
           Start

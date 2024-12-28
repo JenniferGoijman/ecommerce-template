@@ -52,7 +52,7 @@ const CartPage = async () => {
         shopping cart.
       </p>
       <Link
-        className="flex font-medium	 items-center bg-[#0C0C0C] justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-[#2E2E2E] transition-all hover:bg-[#1F1F1F] hover:border-[#454545]"
+        className="flex font-medium	 items-center bg-dark-400 justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-dark-200 transition-all hover:bg-dark-300 hover:border-dark-100"
         href="/login"
       >
         Login
@@ -113,7 +113,7 @@ const ProductsCart = async ({ session }: { session: Session }) => {
         get started?
       </p>
       <Link
-        className="flex font-medium	 items-center bg-[#0C0C0C] justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-[#2E2E2E] transition-all hover:bg-[#1F1F1F] hover:border-[#454545]"
+        className="flex font-medium	 items-center bg-dark-400 justify-center text-sm min-w-[160px] max-w-[160px] h-[40px] px-[10px] rounded-md border border-solid border-dark-200 transition-all hover:bg-dark-300 hover:border-dark-100"
         href="/"
       >
         Start

@@ -79,7 +79,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists }: Navbar) => {
           <Link
             href="/login"
             onClick={() => setIsHeaderOpen(false)}
-            className="text-sm px-4 py-2 transition-all lg:text-[#A1A1A1] hover:text-[#EDEDED] font-medium"
+            className="text-sm px-4 py-2 transition-all lg:text-gray-100 hover:text-gray-200 font-medium"
           >
             Login
           </Link>
@@ -206,7 +206,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists }: Navbar) => {
           <Link
             href="/cart"
             aria-label="Products saved in the shopping cart"
-            className="text-sm py-3 px-3 rounded-md transition-all text-[#EDEDED] hover:bg-[#1F1F1F] relative"
+            className="text-sm py-3 px-3 rounded-md transition-all text-gray-200 hover:bg-dark-300 relative"
           >
             <svg
               data-testid="geist-icon"
@@ -223,7 +223,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists }: Navbar) => {
                 fill="currentColor"
               ></path>
             </svg>
-            <span className="flex items-center bg-[#0072F5] font-medium text-[#EDEDED] justify-center absolute w-[20px] rounded-full top-[-3px] right-[-3px]">
+            <span className="flex items-center bg-blue-100 font-medium text-gray-200 justify-center absolute w-[20px] rounded-full top-[-3px] right-[-3px]">
               {totalItemsCart}
             </span>
           </Link>
@@ -232,7 +232,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists }: Navbar) => {
           <Link
             href="/wishlist"
             aria-label="Products saved in whishlist"
-            className="text-sm py-3 px-3 rounded-md transition-all text-[#EDEDED] hover:bg-[#1F1F1F] relative"
+            className="text-sm py-3 px-3 rounded-md transition-all text-gray-200 hover:bg-dark-300 relative"
           >
             <svg
               data-testid="geist-icon"
@@ -247,7 +247,7 @@ export const Navbar = ({ session, totalItemsCart, totalWishlists }: Navbar) => {
                 fill="currentColor"
               ></path>
             </svg>
-            <span className="flex items-center bg-[#0072F5] font-medium text-[#EDEDED] justify-center absolute w-[20px] rounded-full top-[-3px] right-[-3px]">
+            <span className="flex items-center bg-blue-100 font-medium text-gray-200 justify-center absolute w-[20px] rounded-full top-[-3px] right-[-3px]">
               {totalWishlists || 0}
             </span>
           </Link>

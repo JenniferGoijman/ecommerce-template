@@ -38,10 +38,28 @@ module.exports = {
         "auto-fill-32": "repeat(auto-fill, minmax(32px, 1fr))",
       },
       colors: {
+        dark: {
+          100: '#454545',
+          200: '#2E2E2E',
+          300: '#1F1F1F',
+          400: '#0C0C0C',
+          600: '#111111',
+          700: '#292929',
+        },
+        gray: {
+          100: '#A1A1A1',
+          200: '#EDEDED',
+        },
+        red: {
+          100: '#FF6166',
+        },
+        blue: {
+          100: '#0072F5',
+        },
         "border-primary": "#242424",
         "border-secondary": "#7F7F7F",
-        "background-secondary": "#0a0a0a",
-        "background-alert": "rgba(0, 0, 0, 0.9)",
+        "background-secondary": "#0A0A0A",
+        "background-alert": "#000000E5",
         "color-secondary": "#1A1A1A",
         "color-tertiary": "#888",
         999: "#999",

@@ -35,7 +35,7 @@ const ProductCartInfo = ({ product }: { product: EnrichedProducts }) => {
       return (
         <div className="flex bg-black w-min">
           <button
-            className="flex items-center justify-center w-8 h-8 p-2 border border-solid rounded-l text-[#A1A1A1] transition-all hover:text-white border-border-primary"
+            className="flex items-center justify-center w-8 h-8 p-2 border border-solid rounded-l text-gray-100 transition-all hover:text-white border-border-primary"
             onClick={handleDelItem}
           >
             <svg
@@ -58,7 +58,7 @@ const ProductCartInfo = ({ product }: { product: EnrichedProducts }) => {
             {quantity}
           </span>
           <button
-            className="flex items-center justify-center w-8 h-8 p-2 border border-solid rounded-r text-[#A1A1A1] transition-all hover:text-white border-border-primary"
+            className="flex items-center justify-center w-8 h-8 p-2 border border-solid rounded-r text-gray-100 transition-all hover:text-white border-border-primary"
             onClick={handleAddItem}
           >
             <svg
